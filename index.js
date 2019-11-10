@@ -31,6 +31,8 @@ class ReadableTestDataStream extends Readable {
 			} else {
 				this.repeat = 1;
 			}
+		} else {
+			this.repeat = 1;
 		}
 		this.buf = Buffer.from(data, Buffer.isBuffer(data) ? undefined : encoding);
 		this.writebuf = Buffer.alloc(0);

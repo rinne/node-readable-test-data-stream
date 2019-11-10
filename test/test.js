@@ -3,7 +3,7 @@
 const ReadableTestDataStream = require('../index.js');
 
 (function() {
-	var s = new ReadableTestDataStream('a', null, { repeatInput: 10000, encoding: "hex" });
+	var s = new ReadableTestDataStream('a', { repeatInput: 10000, encoding: "hex" });
 	var d = '';
 	s.on('data', function(data) {
 		d += data;
