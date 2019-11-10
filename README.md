@@ -34,10 +34,10 @@ Create file testfile2 with binary content from hexadecimal buffer
 const fs = require('fs');
 const ReadableTestDataStream = require('readable-test-data-stream');
 
-s = new ReadableTestDataStream('0123456789abcdefedcba987654321',
-                               { inputEncoding: 'hex',
-                                 repeatInput: 100 });
-d = fs.createWriteStream('testfile2');
+var s = new ReadableTestDataStream('0123456789abcdefedcba987654321',
+                                   { inputEncoding: 'hex',
+                                     repeatInput: 100 });
+var d = fs.createWriteStream('testfile2');
 s.pipe(d);
 ```
 
