@@ -1,0 +1,33 @@
+{
+	"name": "readable-test-data-stream",
+	"version": "0.0.1",
+	"description": "Readable stream emitting test data",
+	"main": "index.js",
+	"scripts": {
+		"test": "node ./test/test.js"
+	},
+	"engines": {
+		"node": ">=8.00.0"
+	},
+	"dependencies": {
+		"readable-stream": "^3.4.0"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com:rinne/node-readable-test-data-stream.git"
+	},
+	"keywords": [
+		"stream",
+		"readable-stream",
+		"repeating",
+		"test",
+		"stream",
+		"pipe"
+	],
+	"author": {
+		"name": "Timo J. Rinne",
+		"email": "tri@iki.fi",
+		"url": "https://github.com/rinne/"
+	},
+	"license": "GPL-2.0"
+}
