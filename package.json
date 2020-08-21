@@ -1,16 +1,16 @@
 {
 	"name": "readable-test-data-stream",
-	"version": "0.1.0",
+	"version": "0.2.0",
 	"description": "Readable stream emitting test data",
 	"main": "index.js",
 	"scripts": {
 		"test": "node ./test/test.js"
 	},
 	"engines": {
-		"node": ">=8.00.0"
+		"node": ">=8.0.0"
 	},
 	"dependencies": {
-		"readable-stream": "^3.4.0"
+		"readable-stream": "^3.6.0"
 	},
 	"repository": {
 		"type": "git",
