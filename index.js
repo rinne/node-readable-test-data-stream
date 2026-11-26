@@ -17,7 +17,7 @@ class ReadableTestDataStream extends Readable {
 				if (typeof(readableStreamOptions.inputEncoding) === 'string') {
 					encoding = readableStreamOptions.inputEncoding;
 				} else {
-					throw new Error('options.repeatInput must be a string');
+					throw new Error('options.inputEncoding must be a string');
 				}
 			}
 			if (readableStreamOptions.hasOwnProperty('repeatInput')) {
@@ -27,7 +27,6 @@ class ReadableTestDataStream extends Readable {
 				} else {
 					throw new Error('options.repeatInput must be a positive integer');
 				}
-				delete readableStreamOptions.repeatInput;
 			} else {
 				this.repeat = 1;
 			}
