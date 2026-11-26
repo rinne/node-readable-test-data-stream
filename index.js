@@ -1,6 +1,6 @@
 'use strict';
 
-const Readable = require('readable-stream').Readable;
+const Readable = require('stream').Readable;
 
 class ReadableTestDataStream extends Readable {
 	constructor(data, readableStreamOptions) {

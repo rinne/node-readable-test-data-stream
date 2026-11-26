@@ -4,6 +4,8 @@ Changelog
 Unreleased
 ----------
 
+- Uses Node's own stream module instead of readable-stream, so the
+  package has no dependencies. Still runs on Node.js 8.
 - The constructor deleted `repeatInput` from the caller's options
   object, so a second stream made with the same object repeated its
   data only once. The options object is no longer changed.
